@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<title>Lob.com Sample Attachment</title>
+<style>
+  *, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 8.5in;
+    height: 11in;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page {
+    page-break-after: always;
+    position: relative;
+    width: 8.5in;
+    height: 11in;
+  }
+
+  .page-content {
+    position: absolute;
+    width: 8.125in;
+    height: 10.625in;
+    left: 0.1875in;
+    top: 0.1875in;
+    background-color: rgba(0,0,0,0.2);
+  }
+
+  .text {
+    position: relative;
+    left: 20px;
+    top: 20px;
+    width: 6in;
+    font-family: 'Open Sans';
+    font-size: 30px;
+  }
+</style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="page-content">
+      <div class="text">
+        The grey box is the safe area. Do not put text outside this box. If you are using the merge_variables argument, you can add variables like this: {{variable_name}}.
+      </div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="page-content">
+      <div class="text">
+        This is a second page.
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
