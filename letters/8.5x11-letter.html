@@ -57,7 +57,6 @@
     top: .34in;
     width: 2.05in;
     height: .44in;
-    background-color: white;
     font-size: .11in;
   }
 
@@ -67,7 +66,6 @@
     top: .02in;
     width: 2.05in;
     height: .3in;
-    background-color: white;
   }
 
   #recipient-address-window {
@@ -85,7 +83,15 @@
     top: .05in;
     width: 2.92in;
     height: .9in;
+  }
+
+  #white-box {
     background-color: white;
+    width: 3.15in;
+    height: 2in;
+    position: absolute;
+    left: .6in;
+    top: .84in;
   }
 
 </style>
@@ -98,6 +104,10 @@
         If you are using the merge_variables argument, you can add variables like this: {{variable_name}}.
       </div>
     </div>
+
+    <!-- This div represents a white box which will be printed on top of all artwork to hold address and barcode information. Any content provided underneath this area will be covered. -->
+    <div id="white-box"></div>
+
     <div id="return-address-window">
       <div id="return-logo">
         Room for company logo.
