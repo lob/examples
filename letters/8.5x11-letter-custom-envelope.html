@@ -1,0 +1,94 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<title>Lob.com Sample 8.5x11 Letter with Custom Envelope</title>
+<style>
+  *, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 8.5in;
+    height: 11in;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page {
+    page-break-after: always;
+    position: relative;
+    width: 8.5in;
+    height: 11in;
+  }
+
+  .page-content {
+    position: absolute;
+    width: 8.125in;
+    height: 10.625in;
+    left: 0.1875in;
+    top: 0.1875in;
+    background-color: rgba(0,0,0,0.2);
+  }
+
+  .text {
+    position: relative;
+    left: 20px;
+    top: 20px;
+    width: 6in;
+    font-family: 'Open Sans';
+    font-size: 30px;
+  }
+
+  #recipient-address-window {
+    position: absolute;
+    left: .5in;
+    top: 1.7in;
+    width: 4.5in;
+    height: 1.125in;
+    background-color: rgba(255,0,0,0.5);
+  }
+
+  #white-box {
+    background-color: white;
+    width: 3.15in;
+    height: 1.3in;
+    position: absolute;
+    left: .8in;
+    top: 1.54in;
+    font-size: 13px;
+    padding: 20px 15px;
+  }
+</style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="page-content">
+      <div class="text" style="top: 3in">
+        If you are using the merge_variables argument, you can add variables like this: {{variable_name}}.
+      </div>
+    </div>
+
+    <!-- This div represents a white box which will be printed on top of all artwork to hold address and barcode information. Any content provided underneath this area will be covered. -->
+    <div id="white-box">
+      <div id="recipient-address-text">
+        The recipient address will be printed here on top of a white box which will cover any content provided which is underneath this area. The red area represents a rough area which will be visible through the envelope window.
+      </div>
+    </div>
+
+    <div id="recipient-address-window">
+    </div>
+  </div>
+  <div class="page">
+    <div class="page-content">
+      <div class="text">
+        This is a second page.
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
