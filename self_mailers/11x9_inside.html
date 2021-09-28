@@ -1,48 +1,93 @@
 <html>
-
-<head>
-  <meta charset="UTF-8">
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-  <title>Lob.com Sample 11x9 Self Mailer</title>
-  <style>
-    *,
-    *:before,
-    *:after {
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-    }
-
-    body {
-      width: 9.25in;
-      height: 11.25in;
-      margin: 0;
-      padding: 0;
-      background-color:rgba(181, 178, 177);
-      background-image: url(https://s3-us-west-2.amazonaws.com/public.lob.com/assets/sfm_12x9_background.png);
-      background-size: 9.25in 11.25in;
-      background-repeat: no-repeat;
-    }
-
-    #safe-area {
-      position: absolute;
-      width: 8.75in;
-      height: 10.75in;
-      left: 0.25in;
-      top: 0.25in;
-      background-color: rgba(255,255,255,0.5);
-    }
-
-  </style>
-</head>
-
-<body>
-  <body>
-    <div id="safe-area">
-      <!-- All text and content should appear within the safe area. -->
-      <div class="text">
-      The frosted white box denotes the safe area to place text and content.
-      </div>
-    </div>
-  </body>
+   <head>
+      <meta charset="UTF-8">
+      <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+      <title>Lob.com Sample 11x9 Self Mailer</title>
+      <style>
+         *,
+         *:before,
+         *:after {
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box;
+         }
+         body {
+         width: 9.25in;
+         height: 11.25in;
+         margin: 0;
+         padding: 0;
+         background-color:rgba(181, 178, 177);
+         background-image: url(https://s3-us-west-2.amazonaws.com/public.lob.com/assets/sfm_12x9_background.png);
+         background-size: 9.25in 11.25in;
+         background-repeat: no-repeat;
+         }
+         #safe-area {
+         position: absolute;
+         width: 8.75in;
+         height: 10.75in;
+         left: 0.25in;
+         top: 0.25in;
+         background-color: rgba(255,255,255,0.5);
+         }
+         #trim-area {
+         position: absolute;
+         width: 9in;
+         height: 11in;
+         left: 0.125in;
+         top: 0.125in;
+         background-color: rgba(255,255,0,0.4);
+         }
+         #top-panel {
+         position: absolute;
+         width: 8.75in;
+         height: 5in;
+         left: 0.25in;
+         top: 0.25in;
+         background-color: rgba(55,255,255,0.7);
+         }
+         #bottom-panel {
+         position: absolute;
+         width: 8.75in;
+         height: 5in;
+         left: 0.25in;
+         top: 5.25in;
+         background-color: rgba(225,255,255,0.8);
+         }
+         #glue-area {
+         position: absolute;
+         width: 8.75in;
+         height: 0.5in;
+         left: 0.25in;
+         top: 9.75in;
+         background-color: rgba(255,25,255,0.8);
+         }
+         #folded-visable-area {
+         position: absolute;
+         width: 8.75in;
+         height: 0.75in;
+         left: 0.25in;
+         top: 10.25in;
+         background-color: rgba(25,255,25,0.8);
+         }
+      </style>
+   </head>
+   <body>
+      <body>
+         <div id="trim-area">
+            <!-- Color can be printed in the trim area, but you should avoid creative and text -->
+         </div>
+         <div id="top-panel">
+            All critical artwork should be kept within the blue safe zone. When opened, there will be continuity between the top panel and bottom panel.
+         </div>
+         <div id="bottom-panel">
+            All critical artwork should be kept in the frosted white safe zone. Color can be printed edge-to-edge. When opened, there will be continuity between the top panel and bottom panel.
+         </div>
+         <div id="glue-area">
+            The top panel will be glued to the bottom panel in this area. Critical artwork should be placed in the pink safe zone. Color can be printed edge-to-edge. The glue zone is part of the bottom panel.
+         </div>
+         <div id="folded-visable-area">
+            All critical artwork should be kept within the green visable safe zone. Color can be printed edge-to-edge. When folded/closed, this area will be visable.
+         </div>
+         </div>
+   </body>
 </html>
